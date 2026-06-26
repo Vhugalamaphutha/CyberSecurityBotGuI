@@ -6,3 +6,5 @@ obj/
 *.exe 
 *.dll 
 packages/
+Database.sql
+*.txt
