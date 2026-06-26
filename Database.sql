@@ -1,0 +1,11 @@
+CREATE DATABASE IF NOT EXISTS cyberbot;
+USE cyberbot;
+
+CREATE TABLE IF NOT EXISTS tasks (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    title VARCHAR(100) NOT NULL,
+    description TEXT,
+    reminder_date DATETIME,
+    is_completed BOOLEAN DEFAULT FALSE,
+    created_at DATETIME DEFAULT CURRENT_TIMESTAMP
+);
